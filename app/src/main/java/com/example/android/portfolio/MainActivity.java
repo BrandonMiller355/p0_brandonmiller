@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
+//        if (savedInstanceState == null) {
+//            getSupportFragmentManager().beginTransaction()
+//                    .add(R.id.container, new PlaceholderFragment())
+//                    .commit();
+//        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public static class PlaceholderFragment extends Fragment {
+/*    public static class PlaceholderFragment extends Fragment {
 
         public PlaceholderFragment() {
         }
@@ -82,16 +83,19 @@ public class MainActivity extends AppCompatActivity {
 
             ArrayAdapter<String> myDataAdapter;
 
-            myDataAdapter = new ArrayAdapter<String>(getActivity(), //TODO: see if can change that to rootView instead, since we know it
-                    R.layout.list_item_appname,
-                    R.id.list_item_appname_button,
-                    myApps
-            );
+//            myDataAdapter = new ArrayAdapter<String>(getActivity(), //TODO: see if can change that to rootView instead, since we know it
+//                    R.layout.list_item_appname,
+//                    R.id.list_item_appname_button,
+//                    myApps
+//            );
 
             //FrameLayout framelayout_main = (FrameLayout) findViewById(R.id.framelayout_main);
-            ListView listview_apps = (ListView) rootView.findViewById(R.id.listview_apps);
+//            ListView listview_apps = (ListView) rootView.findViewById(R.id.listview_apps);
+//
+//            listview_apps.setAdapter(myDataAdapter);
 
-            listview_apps.setAdapter(myDataAdapter);
+            TextView textView_apps = (TextView) rootView.findViewById(R.id.textView_apps);
+            textView_apps
 
             return rootView;
         }
@@ -101,5 +105,5 @@ public class MainActivity extends AppCompatActivity {
 //            View testView = inflater.inflate(R.layout.fragment_test, container, false);
 //            return testView;
 //        }
-    }
+    }*/
 }
