@@ -18,74 +18,75 @@
         android:textStyle="bold"
         android:singleLine="false"
         android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
         android:layout_centerHorizontal="true"
         android:textColor="#777777"
         android:id="@+id/textView" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
+        style="@style/myportfoliobutton"
+        android:text="SPOTIFY STREAMER"
+        android:id="@+id/spotify_streamer"
         android:layout_below="@+id/textView"
         android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
         android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_alignEnd="@+id/textView"
+        android:onClick="toastMessage"
+    />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        style="@style/myportfoliobutton"
+        android:text="SCORES APP"
+        android:id="@+id/scores_app"
+        android:layout_below="@+id/spotify_streamer"
+        android:layout_alignRight="@+id/spotify_streamer"
+        android:layout_alignEnd="@+id/spotify_streamer"
+        android:layout_alignLeft="@+id/spotify_streamer"
+        android:layout_alignStart="@+id/spotify_streamer" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        style="@style/myportfoliobutton"
+        android:text="LIBRARY APP"
+        android:id="@+id/library_app"
+        android:layout_below="@+id/scores_app"
+        android:layout_alignRight="@+id/scores_app"
+        android:layout_alignEnd="@+id/scores_app"
+        android:layout_alignLeft="@+id/scores_app"
+        android:layout_alignStart="@+id/scores_app" />
+
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        style="@style/myportfoliobutton"
+        android:text="BUILD IT BIGGER"
+        android:id="@+id/build_it_bigger"
+        android:layout_below="@+id/library_app"
+        android:layout_alignRight="@+id/library_app"
+        android:layout_alignEnd="@+id/library_app"
+        android:layout_alignLeft="@+id/library_app"
+        android:layout_alignStart="@+id/library_app" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button5"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        style="@style/myportfoliobutton"
+        android:text="XYZ READER"
+        android:id="@+id/xyz_reader"
+        android:layout_below="@+id/build_it_bigger"
+        android:layout_alignRight="@+id/build_it_bigger"
+        android:layout_alignEnd="@+id/build_it_bigger"
+        android:layout_alignLeft="@+id/build_it_bigger"
+        android:layout_alignStart="@+id/build_it_bigger" />
+
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        style="@style/myportfoliobutton"
+        android:text="CAPSTONE: MY OWN APP"
+        android:id="@+id/capstone"
+        android:background="#C41742"
+        android:layout_below="@+id/xyz_reader"
+        android:layout_alignRight="@+id/xyz_reader"
+        android:layout_alignEnd="@+id/xyz_reader"
+        android:layout_alignLeft="@+id/xyz_reader"
+        android:layout_alignStart="@+id/xyz_reader" />
 </RelativeLayout>
