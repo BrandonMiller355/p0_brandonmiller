@@ -34,7 +34,7 @@
         android:layout_alignStart="@+id/textView"
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView"
-        android:onClick="toastMessage"
+        android:onClick="toastMessageSpotify"
     />
 
     <Button
@@ -45,7 +45,9 @@
         android:layout_alignRight="@+id/spotify_streamer"
         android:layout_alignEnd="@+id/spotify_streamer"
         android:layout_alignLeft="@+id/spotify_streamer"
-        android:layout_alignStart="@+id/spotify_streamer" />
+        android:layout_alignStart="@+id/spotify_streamer"
+        android:onClick="toastMessageScores"
+     />
 
     <Button
         style="@style/myportfoliobutton"
@@ -55,7 +57,9 @@
         android:layout_alignRight="@+id/scores_app"
         android:layout_alignEnd="@+id/scores_app"
         android:layout_alignLeft="@+id/scores_app"
-        android:layout_alignStart="@+id/scores_app" />
+        android:layout_alignStart="@+id/scores_app"
+        android:onClick="toastMessageLibrary"
+     />
 
 
     <Button
@@ -66,7 +70,9 @@
         android:layout_alignRight="@+id/library_app"
         android:layout_alignEnd="@+id/library_app"
         android:layout_alignLeft="@+id/library_app"
-        android:layout_alignStart="@+id/library_app" />
+        android:layout_alignStart="@+id/library_app"
+        android:onClick="toastMessageBigger"
+    />
 
     <Button
         style="@style/myportfoliobutton"
@@ -76,7 +82,9 @@
         android:layout_alignRight="@+id/build_it_bigger"
         android:layout_alignEnd="@+id/build_it_bigger"
         android:layout_alignLeft="@+id/build_it_bigger"
-        android:layout_alignStart="@+id/build_it_bigger" />
+        android:layout_alignStart="@+id/build_it_bigger"
+        android:onClick="toastMessageReader"
+    />
 
 
     <Button
@@ -88,5 +96,7 @@
         android:layout_alignRight="@+id/xyz_reader"
         android:layout_alignEnd="@+id/xyz_reader"
         android:layout_alignLeft="@+id/xyz_reader"
-        android:layout_alignStart="@+id/xyz_reader" />
+        android:layout_alignStart="@+id/xyz_reader"
+        android:onClick="toastMessageCapstone"
+    />
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.example.android.portfolio;
 
 import android.content.Context;
+//import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+//import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -50,27 +52,51 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void toastMessage(View view) {
-        //source here taken from: http://developer.android.com/guide/topics/ui/notifiers/toasts.html
-//        Context context = getApplicationContext()
-        String toastMessage = "Unknown app";
-
-        String viewName = "";
-        viewName = new viewToString(view);
-
-        switch(viewName) {
-
-            case viewName.endsWith("spotify_streamer}"):
-
-
-        }
-
+    public void toastMessageSpotify(View view) {
+        //source here derived from: http://developer.android.com/guide/topics/ui/notifiers/toasts.html
+        String toastMessage = "This button will launch my Spotify Streamer app!";
 
         Toast toast = Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT);
         toast.show();
-
-        //toastMessage(view.getRootView());
     }
 
+    public void toastMessageScores(View view) {
+        //source here derived from: http://developer.android.com/guide/topics/ui/notifiers/toasts.html
+        String toastMessage = "This button will launch my Scores app!";
 
+        Toast toast = Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void toastMessageLibrary(View view) {
+        //source here derived from: http://developer.android.com/guide/topics/ui/notifiers/toasts.html
+        String toastMessage = "This button will launch my Library app!";
+
+        Toast toast = Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void toastMessageBigger(View view) {
+        //source here derived from: http://developer.android.com/guide/topics/ui/notifiers/toasts.html
+        String toastMessage = "This button will launch my Build it Bigger app!";
+
+        Toast toast = Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void toastMessageReader(View view) {
+        //source here derived from: http://developer.android.com/guide/topics/ui/notifiers/toasts.html
+        String toastMessage = "This button will launch my XYZ Reader app!";
+
+        Toast toast = Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void toastMessageCapstone(View view) {
+        //source here derived from: http://developer.android.com/guide/topics/ui/notifiers/toasts.html
+        String toastMessage = "This button will launch my Capstone app!";
+
+        Toast toast = Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT);
+        toast.show();
+    }
 }
