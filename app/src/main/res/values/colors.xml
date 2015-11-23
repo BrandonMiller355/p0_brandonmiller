@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="my_apps">#777777</color>
+    <color name="minor_proj_button">#F08C35</color>
+    <color name="major_proj_button">#C41742</color>
 </resources>

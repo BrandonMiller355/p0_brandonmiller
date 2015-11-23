@@ -20,12 +20,12 @@
         android:layout_alignParentStart="false"
         android:layout_alignParentLeft="false"
         android:layout_centerHorizontal="true"
-        android:textColor="#777777"
+        android:textColor="@color/my_apps"
         android:id="@+id/textView" />
 
     <Button
         style="@style/myportfoliobutton"
-        android:text="SPOTIFY STREAMER"
+        android:text="@string/spotify"
         android:id="@+id/spotify_streamer"
         android:layout_below="@+id/textView"
         android:layout_marginTop="28dp"
@@ -39,7 +39,7 @@
 
     <Button
         style="@style/myportfoliobutton"
-        android:text="SCORES APP"
+        android:text="@string/scores"
         android:id="@+id/scores_app"
         android:layout_below="@+id/spotify_streamer"
         android:layout_alignRight="@+id/spotify_streamer"
@@ -51,7 +51,7 @@
 
     <Button
         style="@style/myportfoliobutton"
-        android:text="LIBRARY APP"
+        android:text="@string/library"
         android:id="@+id/library_app"
         android:layout_below="@+id/scores_app"
         android:layout_alignRight="@+id/scores_app"
@@ -64,7 +64,7 @@
 
     <Button
         style="@style/myportfoliobutton"
-        android:text="BUILD IT BIGGER"
+        android:text="@string/bigger"
         android:id="@+id/build_it_bigger"
         android:layout_below="@+id/library_app"
         android:layout_alignRight="@+id/library_app"
@@ -76,7 +76,7 @@
 
     <Button
         style="@style/myportfoliobutton"
-        android:text="XYZ READER"
+        android:text="@string/reader"
         android:id="@+id/xyz_reader"
         android:layout_below="@+id/build_it_bigger"
         android:layout_alignRight="@+id/build_it_bigger"
@@ -86,12 +86,11 @@
         android:onClick="toastMessageReader"
     />
 
-
     <Button
         style="@style/myportfoliobutton"
-        android:text="CAPSTONE: MY OWN APP"
+        android:text="@string/capstone"
         android:id="@+id/capstone"
-        android:background="#C41742"
+        android:background="@color/major_proj_button"
         android:layout_below="@+id/xyz_reader"
         android:layout_alignRight="@+id/xyz_reader"
         android:layout_alignEnd="@+id/xyz_reader"
